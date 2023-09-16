@@ -36,7 +36,7 @@ function Home() {
     return (
       <Container>
         <Box w="100%" display="flex" flexDirection="column" alignItems="center">
-          <CalendarIcon boxSize={12} mt={16} color="purple.500" />
+          <CalendarIcon boxSize={12} mt={16} color="#00EC97" />
           <Text size="xs" mt={4} color="gray.700" maxW="sm" textAlign="center">
             You need to sign in to manage your To-do list
           </Text>
@@ -55,13 +55,13 @@ function Home() {
         zIndex={999}
         position="fixed"
         top={0}
-        bg="purple.800"
+        bg="#00b572"
         w="100%"
         mb={4}
         flexDirection={isLargerThan376 ? "row" : "column"}
         justifyContent="space-between"
         alignItems="center"
-        p={4}
+        p={2}
       >
         <Heading as="h4" size="md" color="gray.50">
           Todo List

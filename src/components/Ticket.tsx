@@ -100,7 +100,7 @@ const Ticket: React.FC<Props> = ({ ticketId, name, onDeleteTicket }) => {
   return (
     <Stack
       border="1px solid"
-      borderColor="purple.200"
+      borderColor="#00ce82"
       borderRadius={8}
       minW={isLargerThan560 ? "300px" : "100%"}
       minH="300px"
@@ -109,14 +109,14 @@ const Ticket: React.FC<Props> = ({ ticketId, name, onDeleteTicket }) => {
       <Box
         display="flex"
         justifyContent="space-between"
-        bg="purple.200"
-        p={4}
+        bg="#00ce82"
+        p={2}
         borderTopRadius={8}
       >
-        <Heading as="h4" size="md" color="purple.800">
+        <Heading as="h4" size="md" color="green.800">
           {name}
         </Heading>
-        <Button colorScheme="purple" size="xs" onClick={onDeleteClick}>
+        <Button colorScheme="green" size="xs" onClick={onDeleteClick}>
           Delete
         </Button>
       </Box>
@@ -142,7 +142,7 @@ const Ticket: React.FC<Props> = ({ ticketId, name, onDeleteTicket }) => {
                 <Checkbox
                   opacity={task.finished ? 0.4 : 1}
                   textDecoration={task.finished ? "line-through" : "none"}
-                  colorScheme="purple"
+                  colorScheme="green"
                   checked={task.finished}
                   defaultChecked={task.finished}
                   onChange={() => switchTaskComplete(task)}
@@ -152,7 +152,7 @@ const Ticket: React.FC<Props> = ({ ticketId, name, onDeleteTicket }) => {
                 <IconButton
                   ml={4}
                   size="xs"
-                  colorScheme="purple"
+                  colorScheme="green"
                   aria-label="Delete task"
                   icon={<DeleteIcon />}
                   onClick={() => onRemoveTaskClick(task)}

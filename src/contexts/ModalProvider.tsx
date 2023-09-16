@@ -65,7 +65,7 @@ const ModalProvider: React.FC<{ children: React.ReactNode }> = ({
           <ModalBody>{description}</ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="purple" mr={3} onClick={hideModal}>
+            <Button colorScheme="green" mr={3} onClick={hideModal}>
               No
             </Button>
             <Button

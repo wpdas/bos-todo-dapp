@@ -50,7 +50,7 @@ const NewTicketForm: React.FC<Props> = ({ onCreateTicket }) => {
             <Button
               opacity={disabled ? 0.4 : 1}
               cursor={disabled ? "not-allowed" : "pointer"}
-              colorScheme="purple"
+              colorScheme="green"
               h="1.75rem"
               size="sm"
               onClick={disabled ? undefined : onBtnClick}
